@@ -43,7 +43,7 @@ def solution(input_layer):
         model: A compiled model
     """
 
-    # TODO: Code of your solution
+    # Creating Convolutional Neural Network
     data_augmentation = tf.keras.Sequential(
         [
             layers.experimental.preprocessing.RandomFlip("horizontal",
@@ -68,7 +68,7 @@ def solution(input_layer):
     model.add(layers.Dropout(0.5))
     model.add(layers.Dense(4, activation='softmax'))
 
-    # TODO: Return the compiled model
+    # Return the compiled model
     opt = optimizers.Adam(lr=0.0008)
     model.compile(optimizer=opt,
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(),
