@@ -15,7 +15,7 @@ import tensorflow as tf
 
 import trainer.data as data
 import trainer.model as model
-os.chdir("E:\Hackathon\ML6\ml6team-challenge-find-ml6-mug-7bb0e7996daa")
+
 
 
 def train_model(params):
